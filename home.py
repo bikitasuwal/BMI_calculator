@@ -48,3 +48,11 @@ def bmi_category(bmi):
       return "Obese"
 
 print("Category: ", bmi_category(calculated_bmi))
+# Task 3: Create a function save_bmi_record(name, bmi)
+def save_bmi_record(name, bmi):
+    """Save BMI record into a file bmi_records.txt"""
+    with open("bmi_records.txt", "a") as file:  # append mode
+        file.write(f"Name: {name}, BMI: {round(bmi, 2)}, Category: {bmi_category(bmi)}\n")
+    print(f"BMI record for {name} saved successfully.")
+
+
