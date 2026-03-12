@@ -31,7 +31,12 @@ def calculate_bmi(weight, height):
 calculated_bmi = calculate_bmi(4, 1.75)
 print("Your BMI is:", round(calculated_bmi, 2))
 
-#Task 2: 
+'''Task 2: Create a function bmi_category(bmi) that returns:
+Underweight
+Normal
+Overweight
+Obese'''
+
 def bmi_category(bmi):
     if bmi< 18.5:
         return "Underweight"
